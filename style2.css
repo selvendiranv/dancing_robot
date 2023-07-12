@@ -1,0 +1,243 @@
+.face
+{
+height: 130px;
+width: 200px;
+border-radius: 100px 100px 0px 0px;
+background-color: rgb(250, 32, 159);
+margin-top: 50px;
+padding: 2px;
+
+}
+.reye
+{
+    border: 2px rgb(24, 22, 22);
+    height: 15px;
+    width: 15px;
+    background-color: rgb(249, 239, 239);
+    border-radius: 50%;
+    position:fixed;
+    top:190px;
+    left:575px;
+   
+}
+.leye
+{
+    border: 2px rgb(24, 22, 22);
+    height: 16px;
+    width: 15px;
+    background-color: rgb(255, 250, 250);
+    border-radius: 50%;
+    position:fixed;
+    top:190px;
+    right:575px;
+
+   
+}
+.body
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 0px 0px 50px 50px;
+    background-color: rgb(250, 32, 159);
+    margin-top:10px;
+    padding:2px ;
+    
+    }    
+
+.lh   
+{
+    height: 100px;
+    width: 38px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(250, 32, 159);
+    position: absolute;
+    top: 260px;
+    left: 475px; 
+    
+
+} 
+    
+.rh
+{
+    height: 100px;
+    width: 38px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(250, 32, 159);
+    position: absolute;
+    left: 710px;
+    top: 260px;
+
+
+} 
+
+.rl
+{
+    height: 100px;
+    width: 38px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(250, 32, 159);
+    position: absolute;
+    top: 420px;
+    left: 620px;
+    z-index: -1;
+} 
+   
+.ll
+{
+    height: 100px;
+    width: 38px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgb(250, 32, 159);
+    position: absolute;
+    top: 420px;
+    right: 620px;
+    z-index: -1;
+    
+} 
+
+
+  .face:hover {
+    animation: face 2s infinite;
+  }
+  
+  
+  .robot:hover .lh{
+    animation: lh 2s infinite;
+  }
+  
+  .robot:hover .rh {
+    animation: rh 2s infinite;
+  }
+
+  .robot:hover .body {
+    border-radius: 40%;
+    animation: body 2s infinite;
+  }
+  .robot:hover .ll {
+    animation: ll 2s infinite;
+  }
+  
+  .robot:hover .rl {
+    animation: rl 2s infinite;
+  }
+
+
+  @keyframes face {
+    0% {
+      width: 200px;
+    }
+  
+    25% {
+      width: 150px;
+    }
+  
+    50% {
+      width: 200px;
+    }
+  
+    75% {
+      width: 150px;
+    }
+  
+    100% {
+      width: 200px;
+    }
+  }
+
+  @keyframes lh {
+    0% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+ 
+  @keyframes rh {
+    0% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    25% {
+      transform: rotate(90deg);
+      transform-origin: top center;
+    }
+  
+    50% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  
+    75% {
+      transform: rotate(-90deg);
+      transform-origin: top center;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top center;
+    }
+  }
+
+  @keyframes ll {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(40deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(40deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes rl {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(-40deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-40deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
